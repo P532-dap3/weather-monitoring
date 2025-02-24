@@ -1,5 +1,8 @@
 package edu.iu.habahram.weathermonitoring.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StatisticsDisplay implements Observer, DisplayElement{
     private float avgTemp = 0.00f;
     private float maxTemp = 100.00f;

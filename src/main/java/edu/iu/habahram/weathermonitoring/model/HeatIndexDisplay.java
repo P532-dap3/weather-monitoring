@@ -1,5 +1,8 @@
 package edu.iu.habahram.weathermonitoring.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HeatIndexDisplay implements Observer, DisplayElement{
     private float heatIndex;
 
@@ -19,7 +22,7 @@ public class HeatIndexDisplay implements Observer, DisplayElement{
                 "display:flex;flex-wrap:wrap;justify-content:center;align-content:center;" +
                 "\">");
         html += "<section>";
-        html += "<h1>Heat Index Display</h1><br/>";
+        html += "<h1>Heat Index</h1><br/>";
         html += String.format("<label>HeatIndex: %s</label><br />", heatIndex);
         html += "</section>";
         html += "</div>";

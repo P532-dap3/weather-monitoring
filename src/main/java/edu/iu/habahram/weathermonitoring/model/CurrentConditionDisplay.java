@@ -25,6 +25,7 @@ public class CurrentConditionDisplay
                 "display:flex;flex-wrap:wrap;justify-content:center;align-content:center;" +
                 "\">");
         html += "<section>";
+        html += "<h1>Current Condition</h1>";
         html += String.format("<label>Temperature: %s</label><br />", temperature);
         html += String.format("<label>Humidity: %s</label><br />", humidity);
         html += String.format("<label>Pressure: %s</label>", pressure);
