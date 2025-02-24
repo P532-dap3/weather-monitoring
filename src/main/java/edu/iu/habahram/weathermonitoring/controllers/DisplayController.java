@@ -97,11 +97,11 @@ public class DisplayController {
             html = "Unsubscribed!";
             status = HttpStatus.FOUND;
         } else if(id.equalsIgnoreCase(heatIndexDisplay.id())){
-            heatIndexDisplay.subscribe();
+            heatIndexDisplay.unsubscribe();
             html = "Unsubscribed!";
             status = HttpStatus.FOUND;
         } else if(id.equalsIgnoreCase(statisticsDisplay.id())) {
-            statisticsDisplay.subscribe();
+            statisticsDisplay.unsubscribe();
             html = "Unsubscribed!";
             status = HttpStatus.FOUND;
         } else {
